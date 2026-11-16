@@ -1,0 +1,117 @@
+<!--
+Name: Zia ullah
+Roll Number: i263131
+Section: C
+-->
+body {
+    background-color: #dcebe5;
+    color: #393638;
+    font-family: Georgia, serif;
+    text-align: center;
+    margin: 30px;
+}
+
+/* Main heading */
+h1 {
+    font-size: 38px;
+    letter-spacing: 3px;
+    margin-bottom: 65px;
+}
+
+/* Invitation card */
+.card {
+    background-color: #f3fbf7;
+    border: 1px solid white;
+    padding: 25px;
+    min-height: 620px;
+}
+
+/* SSWP name */
+.card > h3:first-child {
+    font-size: 25px;
+    letter-spacing: 8px;
+}
+
+/* Dreams and Legacy */
+.dreams {
+    display: flex;
+    justify-content: space-around;
+    max-width: 650px;
+    margin: 10px auto 25px;
+    font-size: 18px;
+}
+
+/* Event title */
+h2 {
+    font-size: 42px;
+    font-weight: normal;
+    margin: 5px;
+}
+
+.of {
+    color: #d7a33c;
+    margin: 5px;
+}
+
+/* Monthly heading */
+.month {
+    color: #e8a51f;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+/* Event details box */
+.details {
+    background-color: #d5eee5;
+    max-width: 700px;
+    margin: 45px auto;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 4px 5px 8px gray;
+}
+
+/* Zoom heading */
+.zoom {
+    font-size: 28px;
+    margin: 20px;
+}
+
+/* Date section */
+.date {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.date strong {
+    font-size: 55px;
+    font-weight: normal;
+}
+
+.date p {
+    letter-spacing: 2px;
+}
+
+/* Yellow lines */
+hr {
+    background-color: #eeb522;
+    height: 3px;
+    border: none;
+}
+
+/* Join button */
+button {
+    background-color: #e8a51f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 28px;
+    font-size: 16px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #d88916;
+}
