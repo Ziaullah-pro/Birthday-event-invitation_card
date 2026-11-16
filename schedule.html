@@ -1,0 +1,123 @@
+<!--
+Name: Zia ullah
+Roll Number: i263131
+Section: C
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSWP - Event Schedule</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styling for the navigation and schedule list, keeping your original theme */
+        .navbar {
+            background-color: #d5eee5;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 2px 3px 6px rgba(0,0,0,0.1);
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .navbar a {
+            color: #393638;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        .navbar a:hover {
+            color: #d88916;
+        }
+        .schedule-table {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 550px;
+        }
+        .schedule-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px dashed #eeb522;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="venue.html">Venue</a></li>
+            <li><a href="rsvp.html">RSVP</a></li>
+        </ul>
+    </nav>
+
+    <h1>EVENT SCHEDULE</h1>
+
+    <div class="card">
+
+        <h3>SSWP</h3>
+
+        <div class="dreams">
+            <p>MY DREAMS</p>
+            <p>MY LEGACY</p>
+        </div>
+
+        <h2>PROGRAM TIMELINE</h2>
+        <p class="of">— OF —</p>
+        <h2>EXCELLENCE</h2>
+
+        <h3 class="month">WEDNESDAY, AUGUST 17, 2026</h3>
+
+        <div class="details">
+
+            <h3>TO WITNESS THE BIRTH OF SSWP ACES</h3>
+
+            <p class="zoom">Zoom Virtual</p>
+
+            <div class="schedule-table">
+                <div class="schedule-item">
+                    <span><strong>10:00 AM – 10:15 AM</strong></span>
+                    <span>Opening & Welcome Note</span>
+                </div>
+                <div class="schedule-item">
+                    <span><strong>10:15 AM – 11:00 AM</strong></span>
+                    <span>SSWP Aces Presentation</span>
+                </div>
+                <div class="schedule-item">
+                    <span><strong>11:00 AM – 11:45 AM</strong></span>
+                    <span>Keynote & Anniversary Speeches</span>
+                </div>
+                <div class="schedule-item">
+                    <span><strong>11:45 AM – 12:00 PM</strong></span>
+                    <span>Closing Remarks & Group Photo</span>
+                </div>
+            </div>
+
+            <button onclick="goToRSVP()">
+                PROCEED TO RSVP
+            </button>
+
+        </div>
+
+    </div>
+
+    <script>
+        function goToRSVP() {
+            // Redirects user to the RSVP page
+            window.location.href = "rsvp.html";
+        }
+    </script>
+
+</body>
+</html>

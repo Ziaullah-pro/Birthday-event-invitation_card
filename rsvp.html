@@ -1,0 +1,140 @@
+<!--
+Name: Zia ullah
+Roll Number: i263131
+Section: C
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSWP - RSVP</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Navigation styling matching your theme */
+        .navbar {
+            background-color: #d5eee5;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 2px 3px 6px rgba(0,0,0,0.1);
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .navbar a {
+            color: #393638;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        .navbar a:hover {
+            color: #d88916;
+        }
+        /* RSVP Form specific styling */
+        .rsvp-form {
+            max-width: 450px;
+            margin: 20px auto;
+            text-align: left;
+        }
+        .rsvp-form label {
+            display: block;
+            margin-top: 15px;
+            font-size: 16px;
+            color: #393638;
+            font-weight: bold;
+        }
+        .rsvp-form input, .rsvp-form select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid #d7a33c;
+            background-color: #f3fbf7;
+            font-family: Georgia, serif;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="venue.html">Venue</a></li>
+            <li><a href="rsvp.html">RSVP</a></li>
+        </ul>
+    </nav>
+
+    <h1>EVENT RSVP</h1>
+
+    <div class="card">
+
+        <h3>SSWP</h3>
+
+        <div class="dreams">
+            <p>MY DREAMS</p>
+            <p>MY LEGACY</p>
+        </div>
+
+        <h2>CONFIRM YOUR ATTENDANCE</h2>
+        <p class="of">— OF —</p>
+        <h2>EXCELLENCE</h2>
+
+        <h3 class="month">AUGUST 17, 2026</h3>
+
+        <div class="details">
+
+            <h3>TO WITNESS THE BIRTH OF SSWP ACES</h3>
+
+            <!-- RSVP Form -->
+            <div class="rsvp-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label for="attendance">Will you attend?</label>
+                <select id="attendance">
+                    <option value="yes">Yes, I will attend</option>
+                    <option value="no">Sorry, I can't make it</option>
+                </select>
+
+                <button onclick="submitRSVP()" style="width: 100%; margin-top: 25px;">
+                    SUBMIT RSVP
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Simple Footer -->
+    <footer style="margin-top: 40px; font-size: 14px; color: #555;">
+        <p>&copy; 2026 SSWP | Roll Number: i263131 (Section C)</p>
+    </footer>
+
+    <script>
+        function submitRSVP() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+
+            if (name.trim() === "" || email.trim() === "") {
+                window.alert("Please fill in both your name and email before submitting.");
+            } else {
+                window.alert("Thank you, " + name + "! Your RSVP has been recorded successfully.");
+            }
+        }
+    </script>
+
+</body>
+</html>

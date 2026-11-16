@@ -1,0 +1,116 @@
+<!--
+Name: Zia ullah
+Roll Number: i263131
+Section: C
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSWP - Venue</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Navigation styling matching your theme */
+        .navbar {
+            background-color: #d5eee5;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 2px 3px 6px rgba(0,0,0,0.1);
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .navbar a {
+            color: #393638;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        .navbar a:hover {
+            color: #d88916;
+        }
+        .venue-box {
+            background-color: #f3fbf7;
+            border: 2px dashed #d7a33c;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 500px;
+        }
+        .venue-box p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #393638;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="venue.html">Venue</a></li>
+            <li><a href="rsvp.html">RSVP</a></li>
+        </ul>
+    </nav>
+
+    <h1>EVENT VENUE</h1>
+
+    <div class="card">
+
+        <h3>SSWP</h3>
+
+        <div class="dreams">
+            <p>MY DREAMS</p>
+            <p>MY LEGACY</p>
+        </div>
+
+        <h2>VIRTUAL LOCATION</h2>
+        <p class="of">— OF —</p>
+        <h2>EXCELLENCE</h2>
+
+        <h3 class="month">AUGUST 17, 2026 | 10 AM - 12 PM</h3>
+
+        <div class="details">
+
+            <h3>TO WITNESS THE BIRTH OF SSWP ACES</h3>
+
+            <!-- Venue Details -->
+            <div class="venue-box">
+                <p class="zoom">Zoom Virtual Platform</p>
+                <p><strong>Platform:</strong> Zoom Video Conferencing</p>
+                <p><strong>Access Link:</strong> Provided upon RSVP submission</p>
+            </div>
+
+            <button onclick="goToRSVP()">
+                PROCEED TO RSVP
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Simple Footer -->
+    <footer style="margin-top: 40px; font-size: 14px; color: #555;">
+        <p>&copy; 2026 SSWP | Roll Number: i263131 (Section C)</p>
+    </footer>
+
+    <script>
+        function goToRSVP() {
+            // Redirects user to the RSVP page
+            window.location.href = "rsvp.html";
+        }
+    </script>
+
+</body>
+</html>
